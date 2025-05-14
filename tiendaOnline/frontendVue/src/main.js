@@ -3,7 +3,11 @@ import { createApp, h } from 'vue'
 import App from './App.vue'
 import { DefaultApolloClient } from '@vue/apollo-composable'
 import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client/core'
+import { createApp } from 'vue';
+import App from './App.vue';
+import './styles.css'; 
 
+createApp(App).mount('#app');
 const httpLink = new HttpLink({
   uri: 'http://localhost:5000/graphql' // Asegúrate de que coincide con tu backend Flask
 })
